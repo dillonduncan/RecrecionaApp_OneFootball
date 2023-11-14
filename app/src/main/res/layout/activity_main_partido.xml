@@ -1,0 +1,527 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F8"
+    tools:context=".MainActivityPartido">
+
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:background="#fff"
+        android:elevation="4dp"
+        app:cardElevation="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:text="Partidos"
+            android:textColor="#000"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="49dp"
+            android:scrollbars="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="clip_vertical"
+                android:orientation="horizontal"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp">
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fondo_ly_partidos"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="Hoy"
+                    android:textColor="#000"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fondo_ly_partidos"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="Mañana"
+                    android:textColor="#000"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fondo_ly_partidos"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="Jue 3 ago"
+                    android:textColor="#000"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fondo_ly_partidos"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="Vie 4 ago"
+                    android:textColor="#000"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="95dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/fondo_ly_partidos"
+                    android:elevation="2dp"
+                    android:gravity="center"
+                    android:text="Sab 5 ago"
+                    android:textColor="#000"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </HorizontalScrollView>
+    </FrameLayout>
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:background="#fff"
+        android:elevation="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/lyInicio"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imgInicio"
+                android:layout_width="27dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_inicio_removebg_preview"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/txtInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="Inicio"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:translationY="-15dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LYPartidos"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imgPartidos"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_partido2"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/txtPartidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="Partidos"
+                android:textColor="#656464"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:translationY="-15dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imageView4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_tv_removebg_preview"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="TV"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:translationY="-15dp"
+                tools:ignore="TextSizeCheck" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lyPerfil"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imgPerfil"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_perfil"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="Perfil"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:translationY="-15dp"
+                tools:ignore="TextSizeCheck" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="110dp"
+        android:background="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fondo_borde_partido_favorito"
+            android:translationY="512dp" />
+
+        <TextView
+            android:id="@+id/textView38"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Paises Bajos Femenino"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:translationX="50dp"
+            android:translationY="182dp" />
+
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fondo_borde_partido_favorito"
+            android:translationY="115dp" />
+
+        <ImageView
+            android:id="@+id/imageView17"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="8dp"
+            android:translationY="133dp"
+            app:srcCompat="@drawable/vietnambandera_removebg_preview" />
+
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fondo_borde_partido_favorito"
+            android:translationY="230dp" />
+
+        <ImageView
+            android:id="@+id/imageView18"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="8dp"
+            android:translationY="170dp"
+            app:srcCompat="@drawable/holandabandera_removebg_preview" />
+
+        <TextView
+            android:id="@+id/textView39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Vietnam Femenino"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:translationX="50dp"
+            android:translationY="147dp" />
+
+        <TextView
+            android:id="@+id/textView40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:translationX="240dp"
+            android:translationY="145dp" />
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="7"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:translationX="240dp"
+            android:translationY="182dp" />
+
+        <ImageView
+            android:id="@+id/imageView14"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_margin="10dp"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@drawable/logomundialfem_removebg_preview" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="15dp"
+            android:text="Copa Mundial Femenina"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:layout_marginTop="40dp"
+            android:text="Fase de grupos: 3 Jornada" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="Grupo E"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="80dp"
+            android:text="Grupo D"
+            android:textColor="#000"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            android:translationY="280dp" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estados Unidos Femenino"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:translationX="50dp"
+            android:translationY="297dp" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Estados Unidos Femenino"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:translationX="50dp"
+            android:translationY="463dp" />
+
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fondo_borde_partido_favorito"
+            android:translationY="115dp" />
+
+        <ImageView
+            android:id="@+id/imageView15"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="8dp"
+            android:translationY="248dp"
+            android:src="@drawable/portugalbandera_removebg_preview"/>
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/portugalbandera_removebg_preview"
+            android:translationX="8dp"
+            android:translationY="415dp" />
+
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fondo_borde_partido_favorito"
+            android:translationY="345dp" />
+
+        <ImageView
+            android:id="@+id/imageView16"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="8dp"
+            android:translationY="285dp"
+            app:srcCompat="@drawable/usabandera_removebg_preview" />
+
+        <ImageView
+            android:id="@+id/imageView20"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:translationX="8dp"
+            android:translationY="452dp"
+            app:srcCompat="@drawable/usabandera_removebg_preview" />
+
+        <FrameLayout
+            android:layout_width="380dp"
+            android:layout_height="2dp"
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/fondo_borde_partido_favorito"
+            android:translationY="397dp" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portugal Femenino"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:translationX="50dp"
+            android:translationY="262dp" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Portugal Femenino"
+            android:textColor="#000"
+            android:textSize="13sp"
+            android:translationX="50dp"
+            android:translationY="429dp" />
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:translationX="240dp"
+            android:translationY="260dp" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:translationX="240dp"
+            android:translationY="427dp" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:translationX="240dp"
+            android:translationY="297dp" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="#000"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            android:translationX="240dp"
+            android:translationY="464dp" />
+
+        <TextView
+            android:id="@+id/textView37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final del Partido"
+            android:textSize="13sp"
+            android:translationX="270dp"
+            android:translationY="160dp" />
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final del Partido"
+            android:textSize="13sp"
+            android:translationX="270dp"
+            android:translationY="442dp" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Final del Partido"
+            android:textSize="13sp"
+            android:translationX="270dp"
+            android:translationY="275dp" />
+
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

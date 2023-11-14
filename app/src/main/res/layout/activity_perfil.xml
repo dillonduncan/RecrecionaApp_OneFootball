@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF8F8"
+    tools:context=".ActivityPerfil">
+
+    <FrameLayout
+        android:id="@+id/frameLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@drawable/fondoperfil"
+        android:elevation="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="right"
+            android:rotation="30"
+            android:translationX="-10dp"
+            android:translationY="10dp"
+            app:srcCompat="@drawable/ajusteperfil_removebg_preview" />
+
+        <FrameLayout
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fondoperfilbolita"
+            android:translationY="-20dp">
+
+            <ImageView
+                android:id="@+id/imageView21"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                app:srcCompat="@drawable/icono_perfil" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/textView48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Usuario"
+            android:textColor="#000"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:translationY="47dp" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:text="Cuenta"
+            android:translationY="-8dp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="409dp"
+        android:layout_height="70dp"
+        android:background="#fff"
+        android:elevation="8dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <FrameLayout
+            android:id="@+id/LYinicio"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_gravity="center"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imgInicio"
+                android:layout_width="27dp"
+                android:layout_height="33dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_inicio_removebg_preview"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/txtInicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="Inicio"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:translationY="-15dp" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/LYPartidos"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imgPartidos"
+                android:layout_width="25dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_partido2"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/txtPartidos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="Partidos"
+                android:textColor="#656464"
+                android:textSize="12sp"
+                android:textStyle="bold"
+                android:translationY="-15dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imageView4"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_tv_removebg_preview"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="TV"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:translationY="-15dp"
+                tools:ignore="TextSizeCheck" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/lyPerfil"
+            android:layout_width="30dp"
+            android:layout_height="70dp"
+            android:layout_weight="1">
+
+            <FrameLayout
+                android:id="@+id/imgPerfil"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:background="@drawable/icono_perfil"
+                android:translationY="-10dp" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom|center"
+                android:text="Perfil"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:translationY="-15dp"
+                tools:ignore="TextSizeCheck" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="475dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/frameLayout2"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:translationY="5dp">
+
+            <FrameLayout
+                android:layout_width="390dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fondo_borde_partido_favorito"
+                android:translationY="48dp">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView50"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SIGUIENDO"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="14dp" />
+
+            <TextView
+                android:id="@+id/textView51"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="Ver todos >"
+                android:textSize="15sp"
+                android:translationX="-10dp"
+                android:translationY="14dp" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="bottom|center_horizontal"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:translationY="-13dp"
+                tools:ignore="SpeakableTextPresentCheck"
+                android:scrollbars="horizontal">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/fondobordefav"
+                        android:elevation="2dp">
+
+                        <ImageView
+                            android:id="@+id/imageVie"
+                            android:layout_width="48dp"
+                            android:layout_height="48dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/escudoriver" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/fondobordefav"
+                        android:elevation="2dp">
+
+                        <ImageView
+                            android:id="@+id/imageView23"
+                            android:layout_width="70dp"
+                            android:layout_height="70dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/junior_escudo" />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/fondobordefav"
+                        android:elevation="2dp">
+
+                        <ImageView
+                            android:id="@+id/image"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/barcelonaescudo_removebg_preview" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/fondobordefav"
+                        android:elevation="2dp">
+
+                        <ImageView
+                            android:id="@+id/imageV"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/escudoflamengo" />
+                    </FrameLayout>
+                    <FrameLayout
+                        android:layout_width="80dp"
+                        android:layout_height="80dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:background="@drawable/fondobordefav"
+                        android:elevation="2dp">
+
+                        <ImageView
+                            android:id="@+id/ageV"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            app:srcCompat="@drawable/escudomancity" />
+                    </FrameLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:background="#fff"
+            android:elevation="4dp"
+            android:translationY="200dp">
+
+            <FrameLayout
+                android:layout_width="390dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fondo_borde_partido_favorito"
+                android:translationY="45dp">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SOLO TUYO"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="14dp" />
+
+            <ImageView
+                android:id="@+id/imageView22"
+                android:layout_width="29dp"
+                android:layout_height="34dp"
+                android:translationX="10dp"
+                android:translationY="60dp"
+                app:srcCompat="@drawable/iconoguardar_removebg_preview" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bookmarks"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:translationX="50dp"
+                android:translationY="68dp" />
+
+            <TextView
+                android:id="@+id/textView54"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center|right"
+                android:text=">"
+                android:textColor="#000"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                android:translationX="-20dp"
+                android:translationY="28dp" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:layout_gravity="bottom"
+            android:background="#fff"
+            android:translationY="-10dp"
+            android:elevation="4dp">
+
+            <FrameLayout
+                android:layout_width="390dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fondo_borde_partido_favorito"
+                android:translationY="43dp">
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="390dp"
+                android:layout_height="2dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/fondo_borde_partido_favorito"
+                android:translationY="93dp">
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/textView55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="APOYO"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:translationX="10dp"
+                android:translationY="14dp" />
+
+            <TextView
+                android:id="@+id/textView56"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacta con nosotros"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:translationX="50dp"
+                android:translationY="60dp" />
+
+            <TextView
+                android:id="@+id/textView57"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Centro de ayuda"
+                android:textColor="#000"
+                android:textStyle="bold"
+                android:translationX="50dp"
+                android:translationY="110dp" />
+
+            <ImageView
+                android:id="@+id/imageView24"
+                android:layout_width="25dp"
+                android:layout_height="28dp"
+                android:translationX="10dp"
+                android:translationY="55dp"
+                app:srcCompat="@drawable/iconocorreo_removebg_preview" />
+
+            <ImageView
+                android:id="@+id/imageView25"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:translationX="10dp"
+                android:translationY="105dp"
+                app:srcCompat="@drawable/iconocentro_ayuda" />
+        </FrameLayout>
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
